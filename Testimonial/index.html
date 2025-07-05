@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Testimonials</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>What Our Customers Say</h1>
+        <button id="openModalBtn">Write a Review</button>
+    </header>
+
+    <section class="testimonials" id="testimonialsContainer">
+        <!-- testimonials inserted by JS -->
+    </section>
+
+    <footer>
+        <p>&copy; 2025 TrustyShop</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="reviewModal" class="modal">
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <h2>Write a Review</h2>
+            <form id="reviewForm">
+                <input type="text" id="nameInput" placeholder="Your Name" required>
+                <input type="url" id="imgInput" placeholder="Your Profile Image URL" required>
+                <div class="star-input">
+                    <span data-val="1">⭐</span>
+                    <span data-val="2">⭐</span>
+                    <span data-val="3">⭐</span>
+                    <span data-val="4">⭐</span>
+                    <span data-val="5">⭐</span>
+                </div>
+                <input type="hidden" id="ratingInput" required>
+                <textarea id="reviewInput" placeholder="Your Review" required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
